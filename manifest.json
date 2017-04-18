@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "IDNChecker",
+  "description": "Shows if the current domain of the tab is a IDN domain",
+  "version": "1.0",
+  "homepage_url": "https://github.com/schue30/IDNChecker",
+  "permissions": [
+    "tabs",
+    "*://*/"
+  ],
+  "icons": {
+    "32": "images/icon.png"
+  },
+  "page_action": {
+    "default_title" : "IDNChecker"
+  },
+  "background": {
+    "scripts": [
+      "punycode.js",
+      "background.js"
+    ],
+    "persistent": true
+  }
+}
